@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site statique</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    
+    <h1>Bienvenue dans notre site !</h1>
+       
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault(); onFormSubmit()">
+
+                    <div>
+                        <label for="id">Identifiant* <label class="validation-error hide"  id="ValidationId" >This Field is required</label></label>
+                        <input type="text" name="id" id="id">
+                    </div>
+                    <div>
+                        <label for="Nom">Nom* <label class="validation-error hide"  id="ValidationNom" >This Field is required</label> </label>
+                        <input type="text" name="nom" id="nom">
+                    </div>                  
+                    <div>
+                        <label for="prenom">Prénoms* <label class="validation-error hide"  id="ValidationPrenom" >This Field is required</label></label>
+                        <input type="text" name="prenom" id="prenom">
+                    </div>
+                    <div>
+                        <label for="sexe">Sexe</label>
+                        <input type="text" name="sexe" id="sexe">
+                    </div>
+                    <div>
+                        <label for="adresse">Adresse</label>
+                        <input type="text" name="adresse" id="adresse">
+                    </div>
+                    <div>
+                        <label for="niveau">Niveau</label>
+                        <input type="text" name="niveau" id="niveau">
+                    </div>
+                    <div>
+                        <input class="form-action-buttons submit" type="submit" value="Submit">
+                    </div>
+                    
+                </form>
+            </td>
+            <td>
+                <table class="list" id="emplist">
+                    <thead>
+                        <tr>
+                            <td class="thead">Identifiant</td>
+                            <td class="thead">Noms</td>
+                            <td class="thead">Prénoms</td>
+                            <td class="thead">Sexe</td>
+                            <td class="thead">Adresse</td>
+                            <td class="thead">Niveau</td>
+                            <td class="thead">Actions</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
